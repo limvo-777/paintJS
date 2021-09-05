@@ -30,7 +30,7 @@ function onMouseMove(event) {
   }
 }
 //event.clientX,Y => 윈도우 좌표 (윈도우 사이즈 작업일 경우 offset과 차이가 없음)
-
+//!painting일 때 path 시작점 생성 -> painting 될 때 좌표 이동후 stroke
 if (canvas) {
   canvas.addEventListener("mousemove", onMouseMove);
   canvas.addEventListener("mousedown", startPainting);
